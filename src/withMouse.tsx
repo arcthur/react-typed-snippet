@@ -22,7 +22,7 @@ interface OwnProps {
 }
 
 interface Options {
-};
+}
 
 const withMouse = ({}: Options = {}) => <P extends InjectedProps>(
   Component: React.ComponentType<P>,
@@ -53,7 +53,7 @@ const withMouse = ({}: Options = {}) => <P extends InjectedProps>(
     }
   }
 
-  return React.forwardRef((props: Props, ref?) => {
+  return React.forwardRef((props: Props, ref) => {
     return <HOC {...props} forwardedRef={ref} />;
   });
 }

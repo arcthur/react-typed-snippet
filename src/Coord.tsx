@@ -5,8 +5,18 @@ class Props {
   y: number = 0;
 }
 
-const Coord: React.SFC<Props> = ({ x, y }) => (<p>{x}, {y}</p>);
+// const Coord: React.SFC<Props> = ({ x, y }) => (<p>{x}, {y}</p>);
 
-Coord.defaultProps = new Props();
+class Coord extends React.PureComponent<Props, {}> {
+  public static defaultProps = new Props();
+
+  render() {
+    const { x, y } = this.props;
+
+    return (
+      <p>{x}, {y}</p>
+    );
+  }
+}
 
 export default Coord;

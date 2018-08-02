@@ -18,7 +18,9 @@ class App extends React.Component<Props, State> {
     return (
       <>
         <Button onClick={this.handleClick}>B</Button>
-        <MCoord />
+        <MCoord ref={(dom: React.RefObject<any>) => {
+          console.log(dom);
+        }} />
         <MouseCB>
           {({ x, y }) => (<Coord x={x} y={y} />)}
         </MouseCB>

@@ -1,0 +1,36 @@
+{
+  "name": "react-typed-snippet",
+  "version": "0.0.1",
+  "description": "react typed snippet",
+  "repository": "arcthur/react-typed-snippet",
+  "license": "MIT",
+  "authors": "arcthur",
+  "keywords": [
+    "typescript",
+    "snippet"
+  ],
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "webpack-serve"
+  },
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "recompose": "^0.26.0"
+  },
+  "devDependencies": {
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "@types/recompose": "*",
+    "cross-env": "^5.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "ts-loader": "^4.4.0",
+    "tslint": "^5.11.0",
+    "tsutils": "^3.0.0",
+    "typescript": "^3.0.0",
+    "webpack": "^4.11.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-middleware": "^3.1.0",
+    "webpack-serve": "^2.0.0"
+  }
+}
